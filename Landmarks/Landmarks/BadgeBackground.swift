@@ -8,12 +8,11 @@
 
 import SwiftUI
 
-struct BadgeBackground : View {
+struct BadgeBackground: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-
-                var width: CGFloat = 100
+                var width: CGFloat = min(geometry.size.width, geometry.size.height)
                 let height = width
                 let xScale: CGFloat = 0.832
                 let xOffset = (width * (1.0 - xScale)) / 2.0
@@ -33,11 +32,11 @@ struct BadgeBackground : View {
                         )
                     )
                     path.addQuadCurve(
-                        to: .init(
+                        to: CGPoint(
                             x: xOffset + width * $0.useWidth.1 * $0.xFactors.1,
                             y: height * $0.useHeight.1 * $0.yFactors.1
                         ),
-                        control: .init(
+                        control: CGPoint(
                             x: xOffset + width * $0.useWidth.2 * $0.xFactors.2,
                             y: height * $0.useHeight.2 * $0.yFactors.2
                         )
@@ -57,7 +56,7 @@ struct BadgeBackground : View {
 }
 
 #if DEBUG
-struct BadgeBackground_Previews : PreviewProvider {
+struct BadgeBackground_Previews: PreviewProvider {
     static var previews: some View {
         BadgeBackground()
     }
