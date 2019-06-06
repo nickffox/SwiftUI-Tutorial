@@ -20,6 +20,9 @@
 		880627E722A86D4A00F4A179 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 880627E622A86D4A00F4A179 /* hikeData.json */; };
 		880627EA22A86D6900F4A179 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880627E822A86D6900F4A179 /* GraphCapsule.swift */; };
 		880627EB22A86D6900F4A179 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880627E922A86D6900F4A179 /* HikeGraph.swift */; };
+		880627F522A8ACCA00F4A179 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880627F422A8ACCA00F4A179 /* CategoryHome.swift */; };
+		880627F722A8AE3700F4A179 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880627F622A8AE3700F4A179 /* CategoryRow.swift */; };
+		8870F5BF22A8B5B800ABF376 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8870F5BE22A8B5B800ABF376 /* charleyrivers.jpg */; };
 		888984BB22A796FB00B7D9A0 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888984BA22A796FB00B7D9A0 /* Badge.swift */; };
 		888984BD22A797F500B7D9A0 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888984BC22A797F500B7D9A0 /* BadgeSymbol.swift */; };
 		888984BF22A7988300B7D9A0 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888984BE22A7988300B7D9A0 /* RotatedBadgeSymbol.swift */; };
@@ -75,6 +78,9 @@
 		880627E622A86D4A00F4A179 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		880627E822A86D6900F4A179 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		880627E922A86D6900F4A179 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		880627F422A8ACCA00F4A179 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		880627F622A8AE3700F4A179 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		8870F5BE22A8B5B800ABF376 /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		888984BA22A796FB00B7D9A0 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		888984BC22A797F500B7D9A0 /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		888984BE22A7988300B7D9A0 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
@@ -141,6 +147,8 @@
 		8804D07422A5BCBF005F7B6C /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				880627F422A8ACCA00F4A179 /* CategoryHome.swift */,
+				880627F622A8AE3700F4A179 /* CategoryRow.swift */,
 				8804D07522A5BCBF005F7B6C /* AppDelegate.swift */,
 				880627E022A86CFD00F4A179 /* HikeDetail.swift */,
 				880627E122A86CFD00F4A179 /* HikeView.swift */,
@@ -179,6 +187,7 @@
 		88F5823A22A612A600A7C504 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8870F5BE22A8B5B800ABF376 /* charleyrivers.jpg */,
 				88F5823B22A612A600A7C504 /* turtlerock.jpg */,
 				88F5823C22A612A600A7C504 /* silversalmoncreek.jpg */,
 				88F5823D22A612A600A7C504 /* icybay.jpg */,
@@ -308,6 +317,7 @@
 				88F5825122A612A600A7C504 /* lakemcdonald.jpg in Resources */,
 				88F5824F22A612A600A7C504 /* silversalmoncreek.jpg in Resources */,
 				880627E722A86D4A00F4A179 /* hikeData.json in Resources */,
+				8870F5BF22A8B5B800ABF376 /* charleyrivers.jpg in Resources */,
 				88F5825522A612A600A7C504 /* landmarkData.json in Resources */,
 				88F5824E22A612A600A7C504 /* turtlerock.jpg in Resources */,
 				8804D08222A5BCC0005F7B6C /* LaunchScreen.storyboard in Resources */,
@@ -339,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880627F722A8AE3700F4A179 /* CategoryRow.swift in Sources */,
 				88E5DCD822A792DE00DE752E /* HexagonParameters.swift in Sources */,
+				880627F522A8ACCA00F4A179 /* CategoryHome.swift in Sources */,
 				88F5825E22A612A600A7C504 /* Landmark.swift in Sources */,
 				8804D07622A5BCBF005F7B6C /* AppDelegate.swift in Sources */,
 				88F5825D22A612A600A7C504 /* Data.swift in Sources */,
